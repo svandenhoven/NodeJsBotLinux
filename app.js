@@ -24,5 +24,5 @@ server.post('/api/messages', connector.listen());
 //=========================================================
 
 bot.dialog('/', function (session) {
-    session.send("Thanks for Contacting the NodeJS Lunix Bot.");
+    session.send("Thanks for Contacting the NodeJS Linux Bot.");
 });
