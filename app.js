@@ -13,8 +13,8 @@ server.listen(process.env.port || process.env.PORT || 3978, function () {
   
 // Create chat bot
 var connector = new builder.ChatConnector({
-    appId: 'f6f0b526-ccad-4929-9bf1-5c3d7948611b',
-    appPassword: '4Z3cYLp5DENWNX878O1pvns'
+    appId: 'bf3f95b9-50e0-459c-b4dc-4b85b2106a12',
+    appPassword: 'oDbymrqtBd8hW5oiWPh8Sox'
 });
 var bot = new builder.UniversalBot(connector);
 server.post('/api/messages', connector.listen());
@@ -24,5 +24,5 @@ server.post('/api/messages', connector.listen());
 //=========================================================
 
 bot.dialog('/', function (session) {
-    session.send("Thanks for Contacting the NodeJS Bot.");
+    session.send("Thanks for Contacting the NodeJS Lunix Bot.");
 });
